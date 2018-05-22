@@ -1,144 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:scrollbars="none">
 
-<RelativeLayout
+    <RelativeLayout
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#3e2723">
-
-    <ImageView
-        android:id="@+id/pastel_view"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/myrect"
-        android:elevation="10dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/pastel"
-        android:translationZ="10dp" />
-
-    <ImageView
-        android:id="@+id/yaroa_view"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="165dp"
-        android:background="@drawable/myrect"
-        android:elevation="10dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/yaroa"
-        android:translationZ="10dp" />
-
-    <ImageView
-        android:id="@+id/phone_icon_view"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/slogan_view"
-        android:layout_marginTop="25dp"
-        android:paddingLeft="15dp"
-        android:src="@drawable/phone_icon" />
-
-    <ImageView
-        android:id="@+id/web_icon_view"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_below="@+id/phone_view"
-        android:paddingLeft="12dp"
-        android:src="@drawable/web_icon" />
-
-    <ImageView
-        android:id="@+id/ubication_icon_view"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/web_view"
-        android:layout_marginTop="5dp"
-        android:paddingLeft="15dp"
-        android:src="@drawable/ubication_icon" />
-
-
-    <TextView
-        android:id="@+id/delicioso_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/yaroa_view"
-        android:layout_marginTop="50dp"
-        android:paddingLeft="16dp"
-        android:text="@string/delicioso"
-        android:textColor="#c5cae9"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/bungee_shade" />
+        android:background="@color/colorBackground">
+
+        <ImageView
+            android:id="@+id/pastel_view"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/myrect"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pastel"
+            android:translationZ="10dp" />
+
+        <ImageView
+            android:id="@+id/yaroa_view"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/myrect"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yaroa"
+            android:translationZ="10dp" />
+
+        <ImageView
+            android:id="@+id/phone_icon_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/slogan_view"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/phone_icon" />
+
+        <ImageView
+            android:id="@+id/web_icon_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/phone_view"
+            android:paddingLeft="12dp"
+            android:src="@drawable/web_icon" />
+
+        <ImageView
+            android:id="@+id/ubication_icon_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/web_view"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/ubication_icon" />
 
 
-    <TextView
-        android:id="@+id/slogan_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/delicioso_view"
-        android:paddingLeft="16dp"
-        android:text="@string/slogan"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic" />
+        <TextView
+            android:id="@+id/delicioso_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yaroa_view"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:paddingLeft="@dimen/default_padding"
+            android:text="@string/delicioso"
+            android:textColor="#c5cae9"
+            android:textSize="@dimen/title_textsize"
+            android:textStyle="bold"
+            app:fontFamily="@font/bungee_shade" />
 
-    <TextView
-        android:id="@+id/phone_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/slogan_view"
-        android:paddingLeft="45dp"
-        android:paddingTop="30dp"
-        android:text="@string/phone_number"
-        android:clickable="true"
-        android:onClick="dialPhone"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/web_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phone_view"
-        android:layout_marginTop="5dp"
-        android:autoLink="all"
-        android:clickable="true"
-        android:linksClickable="true"
-        android:paddingLeft="45dp"
-        android:text="@string/web_address"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic" />
+        <TextView
+            android:id="@+id/slogan_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delicioso_view"
+            android:paddingLeft="16dp"
+            android:text="@string/slogan"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/address_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/web_view"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="45dp"
-        android:text="@string/address"
-        android:clickable="true"
-        android:onClick="addressLocation"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic" />
+        <TextView
+            android:id="@+id/phone_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slogan_view"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="dialPhone"
+            android:paddingLeft="45dp"
+            android:paddingTop="30dp"
+            android:text="@string/phone_number"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/web_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_view"
+            android:layout_marginTop="5dp"
+            android:autoLink="all"
+            android:clickable="true"
+            android:focusable="true"
+            android:linksClickable="true"
+            android:paddingLeft="45dp"
+            android:text="@string/web_address"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/address_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/web_view"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="addressLocation"
+            android:paddingLeft="45dp"
+            android:text="@string/address"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
 </ScrollView>
