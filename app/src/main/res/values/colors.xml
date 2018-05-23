@@ -9,4 +9,11 @@
 
     <!--   a secondary color for controls like checkboxes and text fields -->
     <color name="colorAccent">#607D8B</color>
+
+    <color name="colorBackground">#3e2723</color>
+
+    <color name="colorTextTittle">#c5cae9</color>
+
+    <color name="colorText">#FFFFFF</color>
+
 </resources>

@@ -17,57 +17,64 @@
 
         <ImageView
             android:id="@+id/pastel_view"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
             android:background="@drawable/myrect"
-            android:elevation="10dp"
+            android:elevation="@dimen/dimen_10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/pastel"
-            android:translationZ="10dp" />
+            android:translationZ="@dimen/dimen_10dp" />
 
         <ImageView
             android:id="@+id/yaroa_view"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_165dp"
             android:background="@drawable/myrect"
-            android:elevation="10dp"
+            android:elevation="@dimen/dimen_10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/yaroa"
-            android:translationZ="10dp" />
+            android:translationZ="@dimen/dimen_10dp" />
 
         <ImageView
             android:id="@+id/phone_icon_view"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
             android:layout_below="@+id/slogan_view"
-            android:layout_marginTop="25dp"
-            android:paddingLeft="15dp"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:paddingStart="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
             android:src="@drawable/phone_icon" />
 
         <ImageView
             android:id="@+id/web_icon_view"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
             android:layout_below="@+id/phone_view"
-            android:paddingLeft="12dp"
+            android:paddingStart="@dimen/dimen_12dp"
+            android:paddingLeft="@dimen/dimen_12dp"
             android:src="@drawable/web_icon" />
 
         <ImageView
             android:id="@+id/ubication_icon_view"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
             android:layout_below="@+id/web_view"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="5dp"
-            android:paddingLeft="15dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:paddingStart="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
             android:src="@drawable/ubication_icon" />
 
 
@@ -77,10 +84,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/yaroa_view"
             android:layout_marginTop="@dimen/title_margin_top"
+            android:paddingStart="@dimen/default_padding"
             android:paddingLeft="@dimen/default_padding"
             android:text="@string/delicioso"
-            android:textColor="#c5cae9"
-            android:textSize="@dimen/title_textsize"
+            android:textColor="@color/colorTextTittle"
+            android:textSize="@dimen/title_text_size"
             android:textStyle="bold"
             app:fontFamily="@font/bungee_shade" />
 
@@ -90,10 +98,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/delicioso_view"
-            android:paddingLeft="16dp"
+            android:paddingStart="@dimen/dimen_16dp"
+            android:paddingLeft="@dimen/dimen_16dp"
             android:text="@string/slogan"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorText"
             android:textStyle="italic" />
 
         <TextView
@@ -104,11 +113,12 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="dialPhone"
-            android:paddingLeft="45dp"
-            android:paddingTop="30dp"
+            android:paddingStart="@dimen/dimen_45dp"
+            android:paddingLeft="@dimen/dimen_45dp"
+            android:paddingTop="@dimen/dimen_30dp"
             android:text="@string/phone_number"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorText"
             android:textStyle="italic" />
 
         <TextView
@@ -116,15 +126,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/phone_view"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
             android:autoLink="all"
             android:clickable="true"
             android:focusable="true"
             android:linksClickable="true"
-            android:paddingLeft="45dp"
+            android:paddingStart="@dimen/dimen_45dp"
+            android:paddingLeft="@dimen/dimen_45dp"
             android:text="@string/web_address"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorText"
             android:textStyle="italic" />
 
         <TextView
@@ -132,15 +143,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/web_view"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
             android:clickable="true"
             android:focusable="true"
             android:onClick="addressLocation"
-            android:paddingLeft="45dp"
+            android:paddingStart="@dimen/dimen_45dp"
+            android:paddingLeft="@dimen/dimen_45dp"
             android:text="@string/address"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorText"
             android:textStyle="italic" />
 
     </RelativeLayout>

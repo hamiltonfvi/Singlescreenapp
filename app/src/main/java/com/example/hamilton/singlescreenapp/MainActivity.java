@@ -11,27 +11,27 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int REQUEST_CODE_ASK_PERMISSIONS = 1;  // can be an integer between 0 and 255
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     public void dialPhone(View view) {
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:7042543430")); // only phone apps should handle this
-        callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
+            // Permission not granted in Manifest so request permission
+            ActivityCompat.requestPermissions(this, new String[]
+                    {android.Manifest.permission.CALL_PHONE}, REQUEST_CODE_ASK_PERMISSIONS);
             return;
+        } else {
+            // Permission has been granted in Manifest so dial a number
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+            callIntent.setData(Uri.parse("tel:7042543430"));
+            startActivity(callIntent);
         }
-        // Attempt to start an activity that can handle the Intent
-        startActivity(callIntent);
     }
 
     public void addressLocation(View view) {
